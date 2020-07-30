@@ -47,7 +47,7 @@ for files in os.listdir(path):
         face_encoding = facerecg.face_encodings(face)[0]
         # print (type(face_encoding))
 
-        #entering values in sql
+        #entering values in SQL
         cur.execute("""
             INSERT INTO ImageDB (Person, Person_Img, Face_Encoding)
             VALUES (?, ?, ?)""", (name, img_binary, face_encoding) )
