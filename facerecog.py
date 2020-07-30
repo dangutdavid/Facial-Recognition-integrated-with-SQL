@@ -14,7 +14,7 @@ img_enc = facerecg.face_encodings(img)[0]
 #Extract face encoding data from DB
 cur.execute("SELECT Face_Encoding FROM ImageDB")
 rows = cur.fetchall()
-#Extract name from DB
+#Extract names from DB
 cur.execute("SELECT Person FROM ImageDB")
 names = cur.fetchall()
 
