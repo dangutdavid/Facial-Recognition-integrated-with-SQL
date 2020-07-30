@@ -40,8 +40,8 @@ SQL Command to fetch encoding & name from DB:
 **NOTE**
 The encoding is stored as binary in SQL so this has to be converted back to NumPy array in order to compare the encodings the below code does the needful
 
-row = b''.join(row)
-db_enc = np.frombuffer(row)
+    row = b''.join(row)
+    db_enc = np.frombuffer(row)
 
 # File 3: compare_img.py
 For Comparing two images, just enter the image locations as .jpg and the results will be displayed as TRUE/FALSE
