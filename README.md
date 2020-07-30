@@ -1,4 +1,4 @@
-# Face Recognition Integrated with SQLite
+# Facial Recognition Integrated with SQLite
 
 I created this program as an experiment to play with Python. I would gladly accept pointers from others to improve, simplify, or make the code more efficient. If you would like to make any comments then please feel free to email me at dev.ronithomas@gmail.com.
 
