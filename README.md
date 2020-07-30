@@ -17,7 +17,8 @@ Images are converted to binary and SQL takes it as a BLOB.
 Name the known images properly because that will be read as a person name 
 (ex. If the name of the image is "Roni Thomas.jpg" then the face found in the image will be labeled as "Roni Thomas")
 
-SQL command:
+SQL command to create required table:
+
     CREATE TABLE IF NOT EXISTS ImageDB(
         Person TEXT,
         Person_Img BLOB,
@@ -29,6 +30,7 @@ Give the image location as "C:\...\filename.jpg"
 The given image is compared with the face encodings already available in the DB and if a match is found the name is printed in this case "Match found >>> Roni Thomas"
 
 SQL Command to fetch encoding & name from DB:
+    
     cur.execute("SELECT Face_Encoding FROM ImageDB")
     rows = cur.fetchall()
 
@@ -49,7 +51,8 @@ https://pypi.org/project/face-recognition
 
 For Installing in Windows it must be a hassle but for Linux users it's easy-peasy
 
-Thank You for Reading hope this was helpful.
+
+# Thank You
 
 Regards,
 Roni Thomas
