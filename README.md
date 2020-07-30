@@ -12,13 +12,13 @@ Face encoding details are in NumPy array format
 
 **NOTE**
 
-Give a folder location and not a single image file
+Give a folder location and not a single image file.
 
-Add image which has a single face
+Add image which has a single face.
 
 Images are converted to binary and SQL takes it as a BLOB.
 
-Name the known images properly because that will be read as a person name 
+Name the known images properly because that will be read as a person name.
 (ex. If the name of the image is "Roni Thomas.jpg" then the face found in the image will be labeled as "Roni Thomas")
 
 SQL command to create required table:
@@ -45,20 +45,20 @@ SQL Command to fetch encoding & name from DB:
 
 **NOTE**
 
-The encoding is stored as binary in SQL so this has to be converted back to NumPy array in order to compare the encodings the below code does the needful
+The encoding is stored as binary in SQL so this has to be converted back to NumPy array in order to compare the encodings the below code does the needful,
 
     row = b''.join(row)
     db_enc = np.frombuffer(row)
 
 ### File 3: compare_img.py
-For Comparing two images, just enter the image locations as .jpg and the results will be displayed as 
+For Comparing two images, just enter the image locations as .jpg and the results will be displayed as,
     
     TRUE/FALSE
 
 ### To know more about the face recognition library visit:
 https://pypi.org/project/face-recognition
 
-For Installing in Windows it must be a hassle but for Linux users it's easy-peasy
+For Installing in Windows it must be a hassle but for Linux users it's easy-peasy.
 
 
 ### Thank You
