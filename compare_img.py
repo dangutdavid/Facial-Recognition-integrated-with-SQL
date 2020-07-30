@@ -11,4 +11,6 @@ test_face = face_recognition.load_image_file(test_face_loc)
 test_face_encoding = face_recognition.face_encodings(test_face)[0]
 
 result = face_recognition.compare_faces([known_face_encoding], test_face_encoding)
+
+#True/False
 print (result)
