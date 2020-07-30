@@ -1,5 +1,7 @@
 # Face Recognition Integrated with SQLite
 
+I created this program as an experiment to play with Python. I would gladly accept pointers from others to improve, simplify, or make the code more efficient. If you would like to make any comments then please feel free to email me at dev.ronithomas@gmail.com.
+
 # Used Library:
 face_recognition --> pip install face-recognition
 
@@ -51,4 +53,3 @@ Thank You for Reading hope this was helpful.
 
 Regards,
 Roni Thomas
-dev.ronithomas@gmail.com
